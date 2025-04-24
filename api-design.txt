@@ -1,0 +1,72 @@
+NAMES: Bwalya Mwila, Anthony Iyengunmwena, Jacky Guzman
+
+REQUEST: /animals/<diet>
+
+RESPONSE: A JSON list of all the animals that have a specific diet;
+case-insensitive; arranged in alphabetical order.
+	- <diet> is the primary type of food that certain animals eat
+	- Eg  /animals/Scavenger
+	[Marabou Stork, Hooded Vulture, Indian Vulture]       
+
+REQUEST: /animals/name_starts_with/<letters>
+                                                                     
+RESPONSE: A JSON list of all the animals that have names that start 
+with the prefix (letters) provided; case-insensitive. User types in 
+the first letters of an animal they are looking for and get a list 
+of all the animals that have the same prefix. 
+
+REQUEST: /map/<continent>
+                                                                    
+RESPONSE: An interactive map of the continent will show up, allowing
+the user to be able to zoom in and out of the map and take a closer 
+look at the countries in the continent. The user can hover over the 
+countries to get a small pop up infographic that tells them generic 
+information about the most famous animals in that specific country. 
+If the user wants to learn more about all the animals in a country, 
+they can click on that country to be taken to another page that will
+give them more details. (case-insensitive)                           
+
+REQUEST: /country/<country_name>                              
+
+RESPONSE: A JSON list of dictionaries with “animalname” as the keys.
+The list contains all the animals that are found in a given input 
+country and is case insensitive.
+	- User types in Brazil and receives a list of all the 
+	animals that are found in Brazil as a list of 
+	dictionaries.
+	- Eg  /animals/Brazil
+	[{animalname:Jaguar}, {animalname:Capybara}, 
+	{animalname:Giant Otter}......]  
+
+REQUEST: /info/<animal_name>                                  
+
+RESPONSE: A JSON dictionary that displays all of the information 
+about a single animal. The dictionary has the following fields. 
+ 
+	Name -- (string)
+	Kingdom -- (string)
+	Phylum -- (string) 
+	Subphylum -- (string) 
+	Class -- (string) 
+	Order -- (string) 
+	Suborder -- (string) 
+	Family -- (string) 
+	Genus -- (string) 
+	Species -- (string)
+	Population size -- (int)
+	Life span  -- (int)
+	Top speed  -- (int)
+	Weight  -- (int)
+	Height  -- (int)
+	Length  -- (int)
+	Attributes  -- (string)
+	Distribution -- (dictionary)
+	Habits -- (dictionary)
+	Diet  -- (string)
+	Mating_Habits -- (dictionary)
+	Population -- (dictionary)  
+
+REQUEST: /home
+
+RESPONSE: The user is taken to the homepage of the website. 
+
