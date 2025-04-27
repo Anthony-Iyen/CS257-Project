@@ -1,0 +1,46 @@
+Authors/Creators:
+----------------
+Anthony Iyengunmwena and Isaac Fosler-Lussier
+
+
+Brief Description:
+------------------
+The dataset we are using for this project is sourced from Kaggle. 
+The Kaggle dataset is divided into two parts. One part provides 
+information about the cast, crew, and movie ID, which can be used on 
+IMDb to find more details about specific films. The second part 
+includes various identifiers for movies, such as budget, genre, release date, runtime, and more.
+
+
+User Stories:
+------------
+
+Story 1:
+A casual viewer/movie watcher wants to find the top action movies made
+in the 90s to watch later.
+Implementation:
+Create a filter for genres, and also date released. Lastly a filter to
+rank movies in popularity.
+
+Story 2:
+A director wants to see all the movies they have made.
+Implementation:
+Create a filter  to search for crew/actors in movies. Also allow a
+search feature so that the user can search specific names. Ex: Searchingfor Leonardo Dicaprio
+
+Story 3:
+A casual viewer wants to see the stats of his favorite movie ever.
+Implementation:
+A simple search feature which will result in a list of information for 
+the given movie. Information such revenue, production team, title,etc.
+
+Story 4:
+A casual viewer is trying to find a new movie to watch based on keywordsand specific things they like
+Implementation:
+Explore by Keyword, adding a feature to search for movies just based on certains words that align with the movie such as searching for time 
+travel and movies about time travel appear.
+
+Story 5:
+As a casual user, I want to see movies by release date, and see the lastest movies.
+Implementation: 
+Simple sort feature to sort movies based on release dates either oldest to newest or newest to oldest.
