@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animals API reference</title>
+</head>
+<body>
+    <pre>Animals API: endpoint reference
+All responses are in JSON
+
+REQUEST: /
+RESPONSE:
+    A greeting from this API to you.
+
+REQUEST: /help
+RESPONSE:
+    This message.
+
+REQUEST: /animals/species/{prefix}
+RESPONSE:
+        Returns a list containing all the animals that contain the prefix (first letter) in their species name.
+        The prefix is not case sensitive. The prefix can be a single letter.
+        Example prefixes:
+            a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z
+
+REQUEST: /animals/status/{status}
+RESPONSE:
+        Returns a list of all the animals that fall under one of the seven population status
+        reults: Least concern (LC), Endangered (EN), Vulnerable (VU), Near Threatened (NT)
+        Not evaluated (NE), Critically endangered (CR), Data deficient (DD).
+        Users must use the abbreviations for when checking the endpoint for each of the statuses
+
+        Example:
+
+            /animals/status/LC
+                 
+        Returns a list of all the animals that are Least concern (LC)
+
+REQUEST: /animals/continents/{continent}
+RESPONSE:
+        Returns a list of all continent specified. The continent name is not case sensitive. 
+        The continent name must be a valid continent name.
+
+        Example: 
+        
+            /animals/continents/Africa
+        
+        Returns a list of all the animals that are found in Africa
+
+REQUEST: /animals/countries/{country}
+RESPONSE:
+        Returns a list of all the animals that are found in the country specified.
+        The country name is not case sensitive. The country name must be a valid country name.
+        Example: 
+        
+            /animals/countries/Zambia
+            
+        Returns a list of all the animals that are found in Zambia
+
+REQUEST: /animals/animal_countries/{animals}
+RESPONSE:
+        Returns a list of all the countries that the animal is found in.
+        The animal name is not case sensitive. The animal name must be a valid animal name.
+        Example:
+
+            /animals/animal_countries/Lion
+        
+        Returns a list of all the countries that the animal is found in
+
+REQUEST: /animals/animal_continents/{animals}
+RESPONSE:
+        Returns a list of all the continents that the animal is found in.
+        The animal name is not case sensitive. The animal name must be a valid animal name.
+        Example:
+
+            /animals/animal_continents/Lion
+
+        Returns a list of all the continents that the animal is found in
+
+REQUEST: /animals/trend/{trend}
+RESPONSE:
+        Returns a list of all the animals that are in the trend specified.
+        The trend name is not case sensitive. The trend name must be a valid trend name.
+        All possible trend names:
+            Increasing, Decreasing, Stable, Unknown
+
+        Example:
+        
+            /animals/trend/Increasing
+
+        Returns a list of all the animals that are in the trend Increasing
+
+REQUEST: /animals/animal_info/{prefix}
+RESPONSE:
+        Returns all the information about the animal that contains the prefix (first letter) in their species name.
+        The prefix is not case sensitive. The prefix can be a single letter.
+
+        Example prefixes:
+
+            a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z
+        
+        Returns all the information about the animal that contains the prefix a in their species name
+
+        
+    </pre>
+</body>
+</html>
+
+
+

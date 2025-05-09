@@ -1,0 +1,24 @@
+Teammates: Bwalya Mwila and Jacky Guzman 
+
+Brief description of dataset: This dataset includes information of about 29,358 animals and includes about 20 or so facts about each animal. The information about the animals comes from Animalia.bio, and it includes generic facts about animals such as what species they belong to, their living environments, their eating patterns, whether they are endangered or not, etc. This dataset has the Public Domain license, which makes it easily accessible for us to use. 
+
+Instructions for how to get the dataset: Simply go to the websute https://www.kaggle.com/datasets/lainguyn123/animal-planet?select=animals_info.csv and click on the black "Download" button (it is located in the top part of the website).  
+
+List of user stories we would like to support in the final version of our web application:  
+
+STORY: A tourist who is curious about what animals they might see in the country that they will be going on vacation to, so that they can plan where to visit in that country
+
+IMPLEMENTATION: We can have a section on the left side of the home page where we list all of the continents in the world. That way, they can select a continent and are shown a map of it, making it easy to look for the country they will be visiting and see the type of animals that live there. We hope to show different things when the user does certain actions. If they hoover over a country, only generic information will be shown about how many different animals live there and stuff like that. If they click on it, they will be taken to a different page where they will be given more details about all the animals. On the page with the map of the continent, on the left side we will provide a drop-down menu with all the countries in the continent in alphabetical order.     
+
+STORY: A photographer who is looking to see where certain animals they have never taken a picture of are found in abundance around the world to take pictures of them in their natural habitats. 
+
+IMPLEMENTATION: This would be implemented in our website through a search bar that lets users type in the name of an animal (common name or scientific name) and get all relevant information shown to them in an organized and informational way. We hope to include pictures, facts that are easy to read, and links to either other pages that have more in-depth information or the definitions of certain words that can be confusing to those that are new to the scientific world of words.  
+
+STORY: In order to look up all the animals that fall in the category of endangered species as an animal lover who is concerned about the wellbeing of all living organisms, I can use a filter that is provided on the page to only look at all animals that are endangered or those that are under the least-concerned category of extinction. 
+
+IMPLEMENTATION: We can implement this into our website by adding an option to filter information so that only specific animals that fall under a category are displayed on the screen. This would involve simply reiterating what the filter was (for example, all those that are herbivores) and a long list of animals that are hebivores. Each animal's name would be a link to information about that specific animal (maybe). 
+
+STORY: As a parent who wants to help out their 11 year old child with a homework asignment on animals late at night, I want an easy and fast way to look up information on different animals without having to click on too many buttons and understand the information that is being shown to me because it would make things easy for me and my child. 
+
+IMPLEMENTATION: The implementation for this could involve us providing information about certain scientific words that are not common knowledge (like what phylum means) when the users look up information on a certain animal and need to quickly understand what they are looking at and what is of importance to them. We could also create a small section at the top of the page that provides the basics of a certain animal and below it we could show a more detailed info dump on the animal. We hope that would make searching up animals and getting the information someone needs fast and efficient. And for those that want to learn more and/or need more detailed facts, they would simply have to scroll down to see it. We would also add in a "back arrow" or small "house" icon to make it easy for the user to go back to the search bar and not have to use the back arrow on the browser (as that can be annoying sometimes).
+
